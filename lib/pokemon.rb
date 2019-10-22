@@ -24,7 +24,7 @@ class Pokemon
       WHERE id = ?
     SQL
 
-    db.execute(sql, id).flatten
+    info = db.execute(sql, id).flatten
   end
 
 end
