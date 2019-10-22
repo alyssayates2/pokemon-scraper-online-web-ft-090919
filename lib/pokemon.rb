@@ -25,5 +25,5 @@ class Pokemon
      SQL
    end
 
-   db..execute(sql, id)
+   db.execute(sql, id)
 end
