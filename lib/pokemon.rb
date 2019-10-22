@@ -14,8 +14,7 @@ class Pokemon
         VALUES (?, ?, ?)
         SQL
 
-        :db.execute(sql, self.id, self.name, self.type)
-  end
-
+        DB[:conn].execute(sql, id, name, type) 
+   end
 
 end
