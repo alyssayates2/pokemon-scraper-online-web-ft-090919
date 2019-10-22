@@ -17,7 +17,7 @@ class Pokemon
         db.execute(sql, name, type)
    end
 
-   def self.find(db, id)
+   def self.find(id, db)
      sql = <<-SQL
       SELECT *
       FROM pokemon
