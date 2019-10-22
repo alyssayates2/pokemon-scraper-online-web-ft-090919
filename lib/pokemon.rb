@@ -18,12 +18,14 @@ class Pokemon
    end
 
    def self.find(id, db)
-     sql = <<-SQL
-      INSERT INTO pokemon (id)
-      VALUES (?)
-      SQL
+    sql = <<-SQL
+      SELECT *
+      FROM pokemon
+      WHERE id = ?
+      LIMIT 1
+    SQL
 
-     db.execute(sql, id)
-   end
+    db.execute(sql, id)
+  end
 
 end
