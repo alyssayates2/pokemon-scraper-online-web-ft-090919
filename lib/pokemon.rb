@@ -31,7 +31,6 @@ class Pokemon
     type: info[2],
     db:db
     )
-
   end
 
 end
