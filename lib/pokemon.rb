@@ -19,10 +19,9 @@ class Pokemon
 
    def self.find(id, db)
      sql = <<-SQL
-      SELECT *
+      SELECT id
       FROM pokemon
-      WHERE id = ?
-     SQL
+      SQL
      db.execute(sql)
    end
 
