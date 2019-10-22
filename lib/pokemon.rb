@@ -9,7 +9,7 @@ class Pokemon
   end
 
   def save
-
+    pikachu_from_db = @db.execute("SELECT * FROM pokemon WHERE name = 'Pikachu'")
   end
 
 
