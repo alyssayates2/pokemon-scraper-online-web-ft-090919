@@ -17,8 +17,8 @@ class Pokemon
         db.execute(sql, name, type)
    end
 
-   def self.find
+   def self.find(db, id)
 
-   end 
+   end
 
 end
