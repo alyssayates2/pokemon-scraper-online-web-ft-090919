@@ -23,7 +23,7 @@ class Pokemon
       FROM pokemon
       WHERE id = ?
      SQL
-     db.execute(sql, db, id)
+     db.execute(sql)
    end
 
 end
