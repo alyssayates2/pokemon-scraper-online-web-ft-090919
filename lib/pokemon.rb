@@ -13,8 +13,7 @@ class Pokemon
       CREATE TABLE IF NOT EXISTS pokemons(
         id INTEGER PRIMARY KEY,
         name TEXT,
-        type TEXT,
-        db TEXT
+        type TEXT
         )
         SQL
       DB[:conn].execute(sql)
