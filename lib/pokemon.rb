@@ -25,6 +25,7 @@ class Pokemon
     SQL
 
     info = db.execute(sql, id).flatten
+    Pokemon.new
   end
 
 end
