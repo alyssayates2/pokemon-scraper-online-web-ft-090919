@@ -24,7 +24,7 @@ class Pokemon
       WHERE id = 1
     SQL
 
-    db.execute(sql, id)
+    db.execute(sql)
   end
 
 end
